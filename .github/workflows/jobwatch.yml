@@ -39,6 +39,7 @@ jobs:
         env:
           STATE_DIR: state
           LI_WINDOW: "7200"
+          SKIP_WORKDAY: "1"              # Workday answers GitHub's servers with "429 too many requests"
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           CALLMEBOT_APIKEY: ${{ secrets.CALLMEBOT_APIKEY }}
           META_WA_TOKEN: ${{ secrets.META_WA_TOKEN }}

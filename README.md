@@ -96,6 +96,9 @@ py -3.12 -m jobwatch.run      # next time: prints new matching jobs
 ## Honest limits
 
 - Naukri blocks robots with a captcha, so it is not used.
+- Workday career sites (NVIDIA, Intel, Dell, Citi, Pfizer and about 70 more) answer GitHub's
+  servers with "429 too many requests", so the GitHub run skips them (`SKIP_WORKDAY=1`).
+  Those companies are still covered through LinkedIn. On a home computer Workday works.
 - Google, Apple, Meta, TCS, Infosys, Wipro, Flipkart and a few others have custom
   career sites with no open data feed. For them JobWatch relies on their LinkedIn posts.
 - LinkedIn may slow down or block heavy automatic use. JobWatch makes few, slow requests,

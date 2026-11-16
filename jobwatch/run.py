@@ -117,18 +117,27 @@ def main():
     wd_deadline = time.time() + WD_BUDGET_SEC
     wd_last = meta.setdefault("wd_last", {})
 
+    wd_blocked = {"yes": False}
+
     def run_src(src):
-        if src["type"] == "workday" and time.time() > wd_deadline:
+        if src["type"] == "workday" and (time.time() > wd_deadline or wd_blocked["yes"]):
             return src, [], "SKIP"
         try:
             return src, ats.fetch(src), None
         except Exception as e:
             msg = str(e)
             code = re.search(r"too many (\d+) error", msg)
+            if src["type"] == "workday" and code and code.group(1) == "429":
+                wd_blocked["yes"] = True     # Workday says "too many requests": stop asking this run
             return src, [], f"{e.__class__.__name__}" + (f" HTTP {code.group(1)}" if code else f": {msg[:160]}")
 
     # Workday sites share one rate limit, so read them slowly, oldest-checked first.
-    wd = sorted([s for s in sources if s["type"] == "workday"], key=lambda s: wd_last.get(source_key(s), 0))
+    # SKIP_WORKDAY=1 (set on GitHub): Workday refuses GitHub's servers, so do not ask at all.
+    skip_wd = os.environ.get("SKIP_WORKDAY") == "1"
+    wd = [] if skip_wd else sorted([s for s in sources if s["type"] == "workday"],
+                                   key=lambda s: wd_last.get(source_key(s), 0))
+    if skip_wd:
+        sources = [s for s in sources if s["type"] != "workday"]
     other = [s for s in sources if s["type"] != "workday"]
     with ThreadPoolExecutor(12) as ex_other, ThreadPoolExecutor(WD_WORKERS) as ex_wd:
         f_other = ex_other.map(run_src, other)
