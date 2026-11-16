@@ -24,6 +24,8 @@ from .sources import ats, linkedin
 STATE_DIR = Path(os.environ.get("STATE_DIR", "state"))
 LI_WINDOW = int(os.environ.get("LI_WINDOW", "3600"))      # seconds of LinkedIn history per run
 LI_DETAIL_CAP = int(os.environ.get("LI_DETAIL_CAP", "80"))
+WD_WORKERS = int(os.environ.get("WD_WORKERS", "3"))
+WD_BUDGET_SEC = int(os.environ.get("WD_BUDGET_SEC", "360"))
 KEEP_DAYS = 45
 HEARTBEAT_HOUR_IST = 9
 
@@ -112,17 +114,36 @@ def main():
     log(f"linkedin: {len(cards)} jobs, {li_in_list} new from your companies")
 
     # ---- 2. Company career sites
+    wd_deadline = time.time() + WD_BUDGET_SEC
+    wd_last = meta.setdefault("wd_last", {})
+
     def run_src(src):
+        if src["type"] == "workday" and time.time() > wd_deadline:
+            return src, [], "SKIP"
         try:
             return src, ats.fetch(src), None
         except Exception as e:
-            return src, [], f"{e.__class__.__name__}: {str(e)[:120]}"
+            msg = str(e)
+            code = re.search(r"too many (\d+) error", msg)
+            return src, [], f"{e.__class__.__name__}" + (f" HTTP {code.group(1)}" if code else f": {msg[:160]}")
 
-    with ThreadPoolExecutor(12) as ex:
-        results = list(ex.map(run_src, sources))
+    # Workday sites share one rate limit, so read them slowly, oldest-checked first.
+    wd = sorted([s for s in sources if s["type"] == "workday"], key=lambda s: wd_last.get(source_key(s), 0))
+    other = [s for s in sources if s["type"] != "workday"]
+    with ThreadPoolExecutor(12) as ex_other, ThreadPoolExecutor(WD_WORKERS) as ex_wd:
+        f_other = ex_other.map(run_src, other)
+        f_wd = ex_wd.map(run_src, wd)
+        results = list(f_other) + list(f_wd)
+    skipped = sum(1 for r in results if r[2] == "SKIP")
+    if skipped:
+        log(f"workday: {skipped} sites left for the next run (time limit)")
     newly_seeded = []
     for src, jobs, err in results:
         key = source_key(src)
+        if err == "SKIP":
+            continue
+        if src["type"] == "workday" and not err:
+            wd_last[key] = now
         if err:
             stats["errors"][key] = stats["errors"].get(key, 0) + 1
             log(f"  {key}: {err}")
@@ -145,7 +166,8 @@ def main():
     seeded.update(newly_seeded)
     if newly_seeded:
         log(f"new career sources remembered silently: {len(newly_seeded)}")
-    log(f"career sites: {len(sources)} sources, {sum(len(r[1]) for r in results)} India jobs read")
+    n_err = sum(1 for r in results if r[2] and r[2] != "SKIP")
+    log(f"career sites: {len(sources)} sources, {sum(len(r[1]) for r in results)} India jobs read, {n_err} errors")
 
     # ---- 3. Check experience (only for new jobs that passed the title check)
     alerts = []

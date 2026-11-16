@@ -151,6 +151,7 @@ def workday(src):
         offset += 20
         if not posts or offset >= min(total or 0, max_jobs):
             break
+        time.sleep(0.4)       # Workday rate-limits fast readers (shared Cloudflare)
     return out
 
 
