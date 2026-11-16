@@ -1,0 +1,70 @@
+name: JobWatch
+
+on:
+  schedule:
+    - cron: "7,22,37,52 * * * *"     # every 15 minutes (UTC; GitHub may delay a few minutes)
+  workflow_dispatch: {}               # "Run workflow" button for a manual test
+
+concurrency:
+  group: jobwatch
+  cancel-in-progress: false
+
+permissions:
+  contents: write                     # needed to save the "seen jobs" memory on the state branch
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Load memory (state branch)
+        run: |
+          mkdir -p state
+          if git ls-remote --exit-code --heads origin state >/dev/null; then
+            git fetch --depth=1 origin state
+            git archive FETCH_HEAD | tar -x -C state
+          fi
+          ls -la state
+
+      - name: Check for new jobs
+        env:
+          STATE_DIR: state
+          LI_WINDOW: "7200"
+          WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
+          CALLMEBOT_APIKEY: ${{ secrets.CALLMEBOT_APIKEY }}
+          META_WA_TOKEN: ${{ secrets.META_WA_TOKEN }}
+          META_WA_PHONE_ID: ${{ secrets.META_WA_PHONE_ID }}
+          META_WA_TEMPLATE: ${{ secrets.META_WA_TEMPLATE }}
+          GREENAPI_ID: ${{ secrets.GREENAPI_ID }}
+          GREENAPI_TOKEN: ${{ secrets.GREENAPI_TOKEN }}
+          GREENAPI_URL: ${{ secrets.GREENAPI_URL }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m jobwatch.run
+
+      - name: Save memory (state branch)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -f state/seen.json ] || { echo "no state to save"; exit 0; }
+          cd state
+          rm -rf .git
+          git init -q -b state
+          git config user.name "jobwatch-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "state $(date -u +%FT%TZ)"
+          git push -qf "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" state

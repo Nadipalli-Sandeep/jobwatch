@@ -1,0 +1,767 @@
+[
+ {
+  "company": "Abbott India",
+  "type": "workday",
+  "host": "abbott.wd5.myworkdayjobs.com",
+  "tenant": "abbott",
+  "site": "abbottcareers"
+ },
+ {
+  "company": "Accenture India",
+  "type": "workday",
+  "host": "accenture.wd103.myworkdayjobs.com",
+  "tenant": "accenture",
+  "site": "AccentureCareers"
+ },
+ {
+  "company": "Adobe India",
+  "type": "workday",
+  "host": "adobe.wd5.myworkdayjobs.com",
+  "tenant": "adobe",
+  "site": "external_experienced"
+ },
+ {
+  "company": "Adyen India",
+  "type": "greenhouse",
+  "slug": "adyen"
+ },
+ {
+  "company": "Agilent Technologies India",
+  "type": "workday",
+  "host": "agilent.wd5.myworkdayjobs.com",
+  "tenant": "agilent",
+  "site": "Agilent_Careers"
+ },
+ {
+  "company": "Amazon India",
+  "type": "amazon",
+  "sticky": true
+ },
+ {
+  "company": "Amgen India",
+  "type": "workday",
+  "host": "amgen.wd1.myworkdayjobs.com",
+  "tenant": "amgen",
+  "site": "Careers"
+ },
+ {
+  "company": "Analog Devices India",
+  "type": "workday",
+  "host": "analogdevices.wd1.myworkdayjobs.com",
+  "tenant": "analogdevices",
+  "site": "External"
+ },
+ {
+  "company": "Applied Materials India",
+  "type": "workday",
+  "host": "amat.wd1.myworkdayjobs.com",
+  "tenant": "amat",
+  "site": "External"
+ },
+ {
+  "company": "Aptiv India",
+  "type": "workday",
+  "host": "aptiv.wd5.myworkdayjobs.com",
+  "tenant": "aptiv",
+  "site": "APTIV_CAREERS"
+ },
+ {
+  "company": "Arista Networks India",
+  "type": "smartrecruiters",
+  "slug": "aristanetworks"
+ },
+ {
+  "company": "AstraZeneca India",
+  "type": "workday",
+  "host": "astrazeneca.wd3.myworkdayjobs.com",
+  "tenant": "astrazeneca",
+  "site": "Careers"
+ },
+ {
+  "company": "Baker Hughes India",
+  "type": "workday",
+  "host": "bakerhughes.wd5.myworkdayjobs.com",
+  "tenant": "bakerhughes",
+  "site": "BakerHughes"
+ },
+ {
+  "company": "Bank of America India",
+  "type": "workday",
+  "host": "ghr.wd1.myworkdayjobs.com",
+  "tenant": "ghr",
+  "site": "Lateral-APAC"
+ },
+ {
+  "company": "Barclays India",
+  "type": "workday",
+  "host": "barclays.wd3.myworkdayjobs.com",
+  "tenant": "barclays",
+  "site": "External_Career_Site_Barclays"
+ },
+ {
+  "company": "Becton Dickinson (BD) India",
+  "type": "workday",
+  "host": "bdx.wd1.myworkdayjobs.com",
+  "tenant": "bdx",
+  "site": "EXTERNAL_CAREER_SITE_INDIA"
+ },
+ {
+  "company": "Biogen India",
+  "type": "workday",
+  "host": "biibhr.wd3.myworkdayjobs.com",
+  "tenant": "biibhr",
+  "site": "external"
+ },
+ {
+  "company": "BlackRock India",
+  "type": "workday",
+  "host": "blackrock.wd1.myworkdayjobs.com",
+  "tenant": "blackrock",
+  "site": "BlackRock_Professional"
+ },
+ {
+  "company": "Blackstone India",
+  "type": "workday",
+  "host": "blackstone.wd1.myworkdayjobs.com",
+  "tenant": "blackstone",
+  "site": "Blackstone_Careers"
+ },
+ {
+  "company": "Bristol Myers Squibb India",
+  "type": "workday",
+  "host": "bristolmyerssquibb.wd5.myworkdayjobs.com",
+  "tenant": "bristolmyerssquibb",
+  "site": "BMS"
+ },
+ {
+  "company": "Broadcom India",
+  "type": "workday",
+  "host": "broadcom.wd1.myworkdayjobs.com",
+  "tenant": "broadcom",
+  "site": "External_Career"
+ },
+ {
+  "company": "Broadridge Financial Solutions India",
+  "type": "workday",
+  "host": "broadridge.wd5.myworkdayjobs.com",
+  "tenant": "broadridge",
+  "site": "Careers"
+ },
+ {
+  "company": "Cadence Design Systems India",
+  "type": "workday",
+  "host": "cadence.wd1.myworkdayjobs.com",
+  "tenant": "cadence",
+  "site": "External_Careers"
+ },
+ {
+  "company": "Carrier Midea India",
+  "type": "workday",
+  "host": "carrier.wd5.myworkdayjobs.com",
+  "tenant": "carrier",
+  "site": "jobs"
+ },
+ {
+  "company": "Chevron India",
+  "type": "workday",
+  "host": "chevron.wd5.myworkdayjobs.com",
+  "tenant": "chevron",
+  "site": "jobs"
+ },
+ {
+  "company": "Citibank India",
+  "type": "workday",
+  "host": "citi.wd5.myworkdayjobs.com",
+  "tenant": "citi",
+  "site": "2"
+ },
+ {
+  "company": "Cloudflare India",
+  "type": "greenhouse",
+  "slug": "cloudflare"
+ },
+ {
+  "company": "Coca-Cola India",
+  "type": "workday",
+  "host": "coke.wd1.myworkdayjobs.com",
+  "tenant": "coke",
+  "site": "coca-cola-careers"
+ },
+ {
+  "company": "CrowdStrike India",
+  "type": "workday",
+  "host": "crowdstrike.wd5.myworkdayjobs.com",
+  "tenant": "crowdstrike",
+  "site": "crowdstrikecareers"
+ },
+ {
+  "company": "DXC Technology",
+  "type": "workday",
+  "host": "dxctechnology.wd1.myworkdayjobs.com",
+  "tenant": "dxctechnology",
+  "site": "DXCJobs"
+ },
+ {
+  "company": "Druva",
+  "type": "greenhouse",
+  "slug": "druva"
+ },
+ {
+  "company": "Endava India",
+  "type": "smartrecruiters",
+  "slug": "endava"
+ },
+ {
+  "company": "F5 Networks India",
+  "type": "workday",
+  "host": "ffive.wd5.myworkdayjobs.com",
+  "tenant": "ffive",
+  "site": "f5jobs"
+ },
+ {
+  "company": "FIS Global India",
+  "type": "workday",
+  "host": "fis.wd5.myworkdayjobs.com",
+  "tenant": "fis",
+  "site": "SearchJobs"
+ },
+ {
+  "company": "Fidelity Investments India",
+  "type": "workday",
+  "host": "fmr.wd1.myworkdayjobs.com",
+  "tenant": "fmr",
+  "site": "FidelityCareers"
+ },
+ {
+  "company": "Fidelity Investments India",
+  "type": "workday",
+  "host": "fmr.wd1.myworkdayjobs.com",
+  "tenant": "fmr",
+  "site": "targeted"
+ },
+ {
+  "company": "Fiserv India",
+  "type": "workday",
+  "host": "fiserv.wd5.myworkdayjobs.com",
+  "tenant": "fiserv",
+  "site": "EXT"
+ },
+ {
+  "company": "Freecharge",
+  "type": "smartrecruiters",
+  "slug": "freecharge"
+ },
+ {
+  "company": "Freshworks",
+  "type": "smartrecruiters",
+  "slug": "freshworks"
+ },
+ {
+  "company": "GE Aerospace India",
+  "type": "workday",
+  "host": "geaerospace.wd5.myworkdayjobs.com",
+  "tenant": "geaerospace",
+  "site": "GE_ExternalSite"
+ },
+ {
+  "company": "GE HealthCare India",
+  "type": "workday",
+  "host": "gehc.wd5.myworkdayjobs.com",
+  "tenant": "gehc",
+  "site": "GEHC_ExternalSite"
+ },
+ {
+  "company": "GE Vernova India",
+  "type": "workday",
+  "host": "gevernova.wd5.myworkdayjobs.com",
+  "tenant": "gevernova",
+  "site": "Vernova_ExternalSite"
+ },
+ {
+  "company": "GSK India",
+  "type": "workday",
+  "host": "gsk.wd5.myworkdayjobs.com",
+  "tenant": "gsk",
+  "site": "GSKCareers"
+ },
+ {
+  "company": "Gilead Sciences India",
+  "type": "workday",
+  "host": "gilead.wd1.myworkdayjobs.com",
+  "tenant": "gilead",
+  "site": "gileadcareers"
+ },
+ {
+  "company": "Groww",
+  "type": "greenhouse",
+  "slug": "groww"
+ },
+ {
+  "company": "HP Inc. India",
+  "type": "workday",
+  "host": "hp.wd5.myworkdayjobs.com",
+  "tenant": "hp",
+  "site": "ExternalCareerSite"
+ },
+ {
+  "company": "Hewlett Packard Enterprise (HPE) India",
+  "type": "workday",
+  "host": "hpe.wd5.myworkdayjobs.com",
+  "tenant": "hpe",
+  "site": "Jobsathpe"
+ },
+ {
+  "company": "Hewlett Packard Enterprise (HPE) India",
+  "type": "workday",
+  "host": "hpe.wd5.myworkdayjobs.com",
+  "tenant": "hpe",
+  "site": "WFMathpe"
+ },
+ {
+  "company": "Hewlett Packard Enterprise (HPE) India",
+  "type": "workday",
+  "host": "hpe.wd5.myworkdayjobs.com",
+  "tenant": "hpe",
+  "site": "ACJobSite"
+ },
+ {
+  "company": "HighRadius",
+  "type": "greenhouse",
+  "slug": "highradius"
+ },
+ {
+  "company": "IQVIA India",
+  "type": "workday",
+  "host": "iqvia.wd1.myworkdayjobs.com",
+  "tenant": "iqvia",
+  "site": "IQVIA"
+ },
+ {
+  "company": "Illumina India",
+  "type": "workday",
+  "host": "illumina.wd1.myworkdayjobs.com",
+  "tenant": "illumina",
+  "site": "illumina-careers"
+ },
+ {
+  "company": "Intel India",
+  "type": "workday",
+  "host": "intel.wd1.myworkdayjobs.com",
+  "tenant": "intel",
+  "site": "External"
+ },
+ {
+  "company": "Invesco India",
+  "type": "workday",
+  "host": "invesco.wd1.myworkdayjobs.com",
+  "tenant": "invesco",
+  "site": "IVZ"
+ },
+ {
+  "company": "Ixigo",
+  "type": "smartrecruiters",
+  "slug": "ixigo"
+ },
+ {
+  "company": "JPMorgan Chase & Co. India",
+  "type": "oracle",
+  "host": "jpmc.fa.oraclecloud.com",
+  "site": "CX_1001",
+  "sticky": true
+ },
+ {
+  "company": "Johnson & Johnson India",
+  "type": "workday",
+  "host": "jj.wd5.myworkdayjobs.com",
+  "tenant": "jj",
+  "site": "JJ"
+ },
+ {
+  "company": "KLA India",
+  "type": "workday",
+  "host": "kla.wd1.myworkdayjobs.com",
+  "tenant": "kla",
+  "site": "Search"
+ },
+ {
+  "company": "Kimberly-Clark India",
+  "type": "workday",
+  "host": "kimberlyclark.wd1.myworkdayjobs.com",
+  "tenant": "kimberlyclark",
+  "site": "GLOBAL"
+ },
+ {
+  "company": "LSEG (London Stock Exchange Group) India",
+  "type": "workday",
+  "host": "lseg.wd3.myworkdayjobs.com",
+  "tenant": "lseg",
+  "site": "Careers"
+ },
+ {
+  "company": "Labcorp India",
+  "type": "workday",
+  "host": "labcorp.wd1.myworkdayjobs.com",
+  "tenant": "labcorp",
+  "site": "External"
+ },
+ {
+  "company": "Lendingkart",
+  "type": "smartrecruiters",
+  "slug": "lendingkart"
+ },
+ {
+  "company": "Magna International India",
+  "type": "workday",
+  "host": "magna.wd3.myworkdayjobs.com",
+  "tenant": "magna",
+  "site": "Magna"
+ },
+ {
+  "company": "Marvell Technology India",
+  "type": "workday",
+  "host": "marvell.wd1.myworkdayjobs.com",
+  "tenant": "marvell",
+  "site": "MarvellCareers"
+ },
+ {
+  "company": "Mastercard India",
+  "type": "workday",
+  "host": "mastercard.wd1.myworkdayjobs.com",
+  "tenant": "mastercard",
+  "site": "CorporateCareers"
+ },
+ {
+  "company": "Medtronic India",
+  "type": "workday",
+  "host": "medtronic.wd1.myworkdayjobs.com",
+  "tenant": "medtronic",
+  "site": "MedtronicCareers"
+ },
+ {
+  "company": "Meesho",
+  "type": "lever",
+  "slug": "meesho"
+ },
+ {
+  "company": "Merck India",
+  "type": "workday",
+  "host": "msd.wd5.myworkdayjobs.com",
+  "tenant": "msd",
+  "site": "SearchJobs"
+ },
+ {
+  "company": "Micron Technology India",
+  "type": "eightfold",
+  "host": "micron.eightfold.ai",
+  "domain": "micron.com"
+ },
+ {
+  "company": "Micron Technology India",
+  "type": "workday",
+  "host": "micron.wd1.myworkdayjobs.com",
+  "tenant": "micron",
+  "site": "External"
+ },
+ {
+  "company": "Microsoft India",
+  "type": "eightfold",
+  "host": "apply.careers.microsoft.com",
+  "domain": "microsoft.com",
+  "sticky": true
+ },
+ {
+  "company": "Mondelez India",
+  "type": "workday",
+  "host": "mdlz.wd3.myworkdayjobs.com",
+  "tenant": "mdlz",
+  "site": "External"
+ },
+ {
+  "company": "Morgan Stanley India",
+  "type": "workday",
+  "host": "ms.wd5.myworkdayjobs.com",
+  "tenant": "ms",
+  "site": "External"
+ },
+ {
+  "company": "NVIDIA India",
+  "type": "workday",
+  "host": "nvidia.wd5.myworkdayjobs.com",
+  "tenant": "nvidia",
+  "site": "NVIDIAExternalCareerSite"
+ },
+ {
+  "company": "Narayana Health",
+  "type": "smartrecruiters",
+  "slug": "narayanahealth"
+ },
+ {
+  "company": "Nasdaq India",
+  "type": "greenhouse",
+  "slug": "nasdaq"
+ },
+ {
+  "company": "Nasdaq India",
+  "type": "workday",
+  "host": "nasdaq.wd1.myworkdayjobs.com",
+  "tenant": "nasdaq",
+  "site": "Global_External_Site"
+ },
+ {
+  "company": "Netflix India",
+  "type": "eightfold",
+  "host": "explore.jobs.netflix.net",
+  "domain": "netflix.com",
+  "api": "v2"
+ },
+ {
+  "company": "Northern Trust India",
+  "type": "workday",
+  "host": "ntrs.wd1.myworkdayjobs.com",
+  "tenant": "ntrs",
+  "site": "northerntrust"
+ },
+ {
+  "company": "Novartis India",
+  "type": "workday",
+  "host": "novartis.wd3.myworkdayjobs.com",
+  "tenant": "novartis",
+  "site": "Novartis_Careers"
+ },
+ {
+  "company": "Oracle India",
+  "type": "oracle",
+  "host": "eeho.fa.us2.oraclecloud.com",
+  "site": "CX_45001",
+  "sticky": true
+ },
+ {
+  "company": "Parexel India",
+  "type": "workday",
+  "host": "parexel.wd1.myworkdayjobs.com",
+  "tenant": "parexel",
+  "site": "Parexel_External_Careers"
+ },
+ {
+  "company": "PayPal India",
+  "type": "workday",
+  "host": "paypal.wd1.myworkdayjobs.com",
+  "tenant": "paypal",
+  "site": "jobs"
+ },
+ {
+  "company": "Paytm (One97 Communications)",
+  "type": "lever",
+  "slug": "paytm"
+ },
+ {
+  "company": "Pfizer India",
+  "type": "workday",
+  "host": "pfizer.wd1.myworkdayjobs.com",
+  "tenant": "pfizer",
+  "site": "PfizerCareers"
+ },
+ {
+  "company": "Philips India",
+  "type": "workday",
+  "host": "philips.wd3.myworkdayjobs.com",
+  "tenant": "philips",
+  "site": "jobs-and-careers"
+ },
+ {
+  "company": "Point72 India",
+  "type": "greenhouse",
+  "slug": "point72"
+ },
+ {
+  "company": "Pure Storage India",
+  "type": "greenhouse",
+  "slug": "purestorage"
+ },
+ {
+  "company": "PwC India",
+  "type": "workday",
+  "host": "pwc.wd3.myworkdayjobs.com",
+  "tenant": "pwc",
+  "site": "Global_Experienced_Careers"
+ },
+ {
+  "company": "Qualcomm India",
+  "type": "eightfold",
+  "host": "careers.qualcomm.com",
+  "domain": "qualcomm.com"
+ },
+ {
+  "company": "Renesas Electronics India",
+  "type": "smartrecruiters",
+  "slug": "renesaselectronics"
+ },
+ {
+  "company": "Roche India",
+  "type": "workday",
+  "host": "roche.wd3.myworkdayjobs.com",
+  "tenant": "roche",
+  "site": "roche-ext"
+ },
+ {
+  "company": "S&P Global India",
+  "type": "workday",
+  "host": "spgi.wd5.myworkdayjobs.com",
+  "tenant": "spgi",
+  "site": "SPGI_Careers"
+ },
+ {
+  "company": "Salesforce India",
+  "type": "workday",
+  "host": "salesforce.wd12.myworkdayjobs.com",
+  "tenant": "salesforce",
+  "site": "External_Career_Site"
+ },
+ {
+  "company": "Sanofi India",
+  "type": "workday",
+  "host": "sanofi.wd3.myworkdayjobs.com",
+  "tenant": "sanofi",
+  "site": "SanofiCareers"
+ },
+ {
+  "company": "Sarvam AI",
+  "type": "ashby",
+  "slug": "sarvam"
+ },
+ {
+  "company": "ServiceNow India",
+  "type": "smartrecruiters",
+  "slug": "servicenow"
+ },
+ {
+  "company": "Shell India",
+  "type": "workday",
+  "host": "shell.wd3.myworkdayjobs.com",
+  "tenant": "shell",
+  "site": "ShellCareers"
+ },
+ {
+  "company": "Sigmoid",
+  "type": "greenhouse",
+  "slug": "sigmoid"
+ },
+ {
+  "company": "Sophos India",
+  "type": "ashby",
+  "slug": "sophos"
+ },
+ {
+  "company": "State Street India",
+  "type": "workday",
+  "host": "statestreet.wd1.myworkdayjobs.com",
+  "tenant": "statestreet",
+  "site": "Global"
+ },
+ {
+  "company": "Stripe India",
+  "type": "greenhouse",
+  "slug": "stripe"
+ },
+ {
+  "company": "Stryker India",
+  "type": "workday",
+  "host": "stryker.wd1.myworkdayjobs.com",
+  "tenant": "stryker",
+  "site": "StrykerCareers"
+ },
+ {
+  "company": "Sutherland",
+  "type": "smartrecruiters",
+  "slug": "sutherland"
+ },
+ {
+  "company": "Swiggy",
+  "type": "smartrecruiters",
+  "slug": "swiggy"
+ },
+ {
+  "company": "Syneos Health India",
+  "type": "workday",
+  "host": "syneoshealth.wd12.myworkdayjobs.com",
+  "tenant": "syneoshealth",
+  "site": "Syneos_Health_External_Site"
+ },
+ {
+  "company": "TaskUs",
+  "type": "workday",
+  "host": "taskus.wd1.myworkdayjobs.com",
+  "tenant": "taskus",
+  "site": "Careers"
+ },
+ {
+  "company": "Thermo Fisher Scientific India",
+  "type": "workday",
+  "host": "thermofisher.wd5.myworkdayjobs.com",
+  "tenant": "thermofisher",
+  "site": "ThermoFisherCareers"
+ },
+ {
+  "company": "Thomson Reuters India",
+  "type": "workday",
+  "host": "thomsonreuters.wd5.myworkdayjobs.com",
+  "tenant": "thomsonreuters",
+  "site": "External_Career_Site"
+ },
+ {
+  "company": "Thoughtworks India",
+  "type": "greenhouse",
+  "slug": "thoughtworks"
+ },
+ {
+  "company": "Tower Research Capital India",
+  "type": "greenhouse",
+  "slug": "towerresearchcapital"
+ },
+ {
+  "company": "United Spirits (Diageo India)",
+  "type": "workday",
+  "host": "diageo.wd3.myworkdayjobs.com",
+  "tenant": "diageo",
+  "site": "Diageo_Careers"
+ },
+ {
+  "company": "Upstox",
+  "type": "smartrecruiters",
+  "slug": "upstox"
+ },
+ {
+  "company": "Vanguard India",
+  "type": "workday",
+  "host": "vanguard.wd5.myworkdayjobs.com",
+  "tenant": "vanguard",
+  "site": "vanguard_external"
+ },
+ {
+  "company": "Wells Fargo India",
+  "type": "workday",
+  "host": "wf.wd1.myworkdayjobs.com",
+  "tenant": "wf",
+  "site": "WellsFargoJobs"
+ },
+ {
+  "company": "Western Digital India",
+  "type": "smartrecruiters",
+  "slug": "westerndigital"
+ },
+ {
+  "company": "WorldQuant India",
+  "type": "greenhouse",
+  "slug": "worldquant"
+ },
+ {
+  "company": "Zscaler India",
+  "type": "greenhouse",
+  "slug": "zscaler"
+ },
+ {
+  "company": "observe.ai",
+  "type": "greenhouse",
+  "slug": "observeai"
+ }
+]
